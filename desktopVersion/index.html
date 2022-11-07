@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html
+   id="brain"
+   lang="en"
+   data-color-mode="light"
+   data-light-theme="light"
+   data-dark-theme="dark"
+>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <!-- ANIMATION -->
+      <link rel="stylesheet" href="assets/css/animate.css" />
+      <!-- ICONS -->
+      <link rel="stylesheet" href="assets/css/all.css" />
+      <!-- CSS -->
+      <link rel="stylesheet" href="assets/css/index.css" />
+      <link rel="stylesheet" href="assets/css/index-breakpoin.css" />
+
+      <title>My Portfolio</title>
+   </head>
+   <body>
+      <header>
+         <div class="header-wrapper">
+            <nav class="nv">
+               <a href="#" class="nv-logo">
+                  <figure class="nv-logo-wrapper">
+                     <div class="nv-logo-limit">
+                        <img
+                           src="assets/icon/github-icon.png"
+                           alt="logo"
+                           class="nv-img-logo"
+                        />
+                     </div>
+                  </figure>
+               </a>
+
+               <button class="burger-menu" id="burgerMenu">
+                  <i class="fas fa-times" style="display: none"></i>
+                  <i class="fas fa-bars" style="display: inline"></i>
+               </button>
+
+               <div class="nv-main">
+                  <ul class="nv-item-wrapper">
+                     <li class="nv-item">
+                        <a href="#myProjects" class="nv-link">my projects</a>
+                     </li>
+                     <li class="nv-item">
+                        <a href="#aboutMe" class="nv-link">about me</a>
+                     </li>
+                     <li class="nv-item">
+                        <a href="#mySkills" class="nv-link">my skills</a>
+                     </li>
+                     <li class="nv-item">
+                        <a href="#contactMe" class="nv-link">Contact me</a>
+                     </li>
+                  </ul>
+                  <button class="mode" id="iconMode" onclick="darkMode()">
+                     <i class="fas fa-sun" style="display: none"></i>
+                     <i class="fas fa-moon" style="display: inline"></i>
+                     <span class="titleMode">Light Mode</span>
+                  </button>
+               </div>
+            </nav>
+         </div>
+      </header>
+
+      <main class="main">
+         <article class="projects" id="myProjects">
+            <h2 class="projects-title parallax" data-effect="fadeInDown">
+               my projects
+            </h2>
+            <div class="projects-box-wrapper">
+               <div class="projects-wrapper parallax" data-effect="fadeInLeft">
+                  <a href="#" class="project">
+                     <figure class="project-img-wrapper">
+                        <div class="project-img-limit">
+                           <img
+                              src="assets/img/asd.png"
+                              alt="project 1"
+                              class="project-img"
+                           />
+                        </div>
+                     </figure>
+                     <summary class="box-project-desc">
+                        <h3 class="project-title">project 1</h3>
+                        <p class="project-desc">
+                           Lorem ipsum dolor sit amet consectetur adipisicing
+                           elit. Facere, aspernatur facilis, blanditiis cumque
+                           mollitia distinctio velit doloribus possimus libero
+                           amet sapiente? Porro architecto laborum explicabo
+                           minus fugiat aut laudantium impedit.
+                        </p>
+                     </summary>
+                  </a>
+                  <a href="#" class="project">
+                     <figure class="project-img-wrapper">
+                        <div class="project-img-limit">
+                           <img
+                              src="assets/img/avatar.png"
+                              alt="project 1"
+                              class="project-img"
+                           />
+                        </div>
+                     </figure>
+                     <summary class="box-project-desc">
+                        <h3 class="project-title">project 2</h3>
+                        <p class="project-desc">
+                           Lorem ipsum dolor sit amet consectetur adipisicing
+                           elit. Facere, aspernatur facilis, blanditiis cumque
+                           mollitia distinctio velit doloribus possimus libero
+                           amet sapiente? Porro architecto laborum explicabo
+                           minus fugiat aut laudantium impedit.
+                        </p>
+                     </summary>
+                  </a>
+                  <a href="#" class="project">
+                     <figure class="project-img-wrapper">
+                        <div class="project-img-limit">
+                           <img
+                              src="assets/img/sabo-ace.jpg"
+                              alt="project 1"
+                              class="project-img"
+                           />
+                        </div>
+                     </figure>
+                     <summary class="box-project-desc">
+                        <h3 class="project-title">project 3</h3>
+                        <p class="project-desc">
+                           Lorem ipsum dolor sit amet consectetur adipisicing
+                           elit. Facere, aspernatur facilis, blanditiis cumque
+                           mollitia distinctio velit doloribus possimus libero
+                           amet sapiente? Porro architecto laborum explicabo
+                           minus fugiat aut laudantium impedit.
+                        </p>
+                     </summary>
+                  </a>
+                  <a href="#" class="project">
+                     <figure class="project-img-wrapper">
+                        <div class="project-img-limit">
+                           <img
+                              src="assets/img/sasori-family.png"
+                              alt="project 1"
+                              class="project-img"
+                           />
+                        </div>
+                     </figure>
+                     <summary class="box-project-desc">
+                        <h3 class="project-title">project 4</h3>
+                        <p class="project-desc">
+                           Lorem ipsum dolor sit amet consectetur adipisicing
+                           elit. Facere, aspernatur facilis, blanditiis cumque
+                           mollitia distinctio velit doloribus possimus libero
+                           amet sapiente? Porro architecto laborum explicabo
+                           minus fugiat aut laudantium impedit.
+                        </p>
+                     </summary>
+                  </a>
+                  <a href="#" class="project">
+                     <figure class="project-img-wrapper">
+                        <div class="project-img-limit">
+                           <img
+                              src="assets/img/avatar.png"
+                              alt="project 1"
+                              class="project-img"
+                           />
+                        </div>
+                     </figure>
+                     <summary class="box-project-desc">
+                        <h3 class="project-title">project 5</h3>
+                        <p class="project-desc">
+                           Lorem ipsum dolor sit amet consectetur adipisicing
+                           elit. Facere, aspernatur facilis, blanditiis cumque
+                           mollitia distinctio velit doloribus possimus libero
+                           amet sapiente? Porro architecto laborum explicabo
+                           minus fugiat aut laudantium impedit.
+                        </p>
+                     </summary>
+                  </a>
+                  <a href="#" class="project">
+                     <figure class="project-img-wrapper">
+                        <div class="project-img-limit">
+                           <img
+                              src="assets/img/sabo-ace.jpg"
+                              alt="project 1"
+                              class="project-img"
+                           />
+                        </div>
+                     </figure>
+                     <summary class="box-project-desc">
+                        <h3 class="project-title">project 6</h3>
+                        <p class="project-desc">
+                           Lorem ipsum dolor sit amet consectetur adipisicing
+                           elit. Facere, aspernatur facilis, blanditiis cumque
+                           mollitia distinctio velit doloribus possimus libero
+                           amet sapiente? Porro architecto laborum explicabo
+                           minus fugiat aut laudantium impedit.
+                        </p>
+                     </summary>
+                  </a>
+               </div>
+            </div>
+         </article>
+
+         <article class="about" id="aboutMe">
+            <h2 class="about-title parallax" data-effect="fadeInDown">
+               about me
+            </h2>
+            <div class="about-wrapper">
+               <aside class="about-box-img parallax" data-effect="fadeInLeft">
+                  <figure class="about-limit-img">
+                     <div class="shape-circle">
+                        <img
+                           src="assets/img/ayar.jpeg"
+                           alt="foto guehh..."
+                           class="my-pict"
+                        />
+                     </div>
+                  </figure>
+               </aside>
+               <article
+                  class="about-box-intro parallax"
+                  data-effect="fadeInRight"
+               >
+                  <div class="scrolling-y">
+                     <p class="about-text-intro">
+                        <strong
+                           >Hi ! I'm Muhammad Ahyar and I'm learning to
+                           code.</strong
+                        >
+                        Lorem Ipsum exercitationem possimus laudantium nostrum?
+                        Porro, vel sint ea amet hic veniam, repellendus
+                        necessitatibus voluptatem inventore velit aperiam et
+                        atque eligendi veritatis.
+                     </p>
+                     <p class="about-text-intro">
+                        Lorem Ipsum exercitationem possimus laudantium nostrum?
+                        Porro, vel sint ea amet hic veniam, repellendus
+                        necessitatibus voluptatem inventore velit aperiam et
+                        atque eligendi veritatis.
+                     </p>
+                     <p class="about-text-intro">
+                        Lorem Ipsum exercitationem possimus laudantium nostrum?
+                        Porro, vel sint ea amet hic veniam, repellendus
+                        necessitatibus voluptatem inventore velit aperiam et
+                        atque eligendi veritatis.
+                     </p>
+                     <p class="about-text-intro">
+                        Lorem Ipsum exercitationem possimus laudantium nostrum?
+                        Porro, vel sint ea amet hic veniam, repellendus
+                        necessitatibus voluptatem inventore velit aperiam et
+                        atque eligendi veritatis.
+                     </p>
+                  </div>
+               </article>
+            </div>
+         </article>
+
+         <article class="skills" id="mySkills">
+            <h2 class="projects-title parallax" data-effect="fadeInDown">
+               my skills
+            </h2>
+            <div class="cards-wrapper">
+               <figure class="card-icon parallax" data-effect="fadeInLeft">
+                  <div class="card-icon-limit">
+                     <img
+                        src="assets/icon/github-icon.png"
+                        alt="logo"
+                        class="card-icon-img"
+                     />
+                  </div>
+                  <figcaption class="card-name">Git</figcaption>
+               </figure>
+               <figure class="card-icon parallax" data-effect="fadeInLeft">
+                  <div class="card-icon-limit">
+                     <img
+                        src="assets/icon/github-icon.png"
+                        alt="logo"
+                        class="card-icon-img"
+                     />
+                  </div>
+                  <figcaption class="card-name">Github</figcaption>
+               </figure>
+               <figure class="card-icon parallax" data-effect="fadeInLeft">
+                  <div class="card-icon-limit">
+                     <img
+                        src="assets/icon/github-icon.png"
+                        alt="logo"
+                        class="card-icon-img"
+                     />
+                  </div>
+                  <figcaption class="card-name">HTML</figcaption>
+               </figure>
+               <figure class="card-icon parallax" data-effect="fadeInLeft">
+                  <div class="card-icon-limit">
+                     <img
+                        src="assets/icon/github-icon.png"
+                        alt="logo"
+                        class="card-icon-img"
+                     />
+                  </div>
+                  <figcaption class="card-name">CSS</figcaption>
+               </figure>
+               <figure class="card-icon parallax" data-effect="fadeInLeft">
+                  <div class="card-icon-limit">
+                     <img
+                        src="assets/icon/github-icon.png"
+                        alt="logo"
+                        class="card-icon-img"
+                     />
+                  </div>
+                  <figcaption class="card-name">PHP</figcaption>
+               </figure>
+               <figure class="card-icon parallax" data-effect="fadeInLeft">
+                  <div class="card-icon-limit">
+                     <img
+                        src="assets/icon/github-icon.png"
+                        alt="logo"
+                        class="card-icon-img"
+                     />
+                  </div>
+                  <figcaption class="card-name">Javascript</figcaption>
+               </figure>
+               <figure class="card-icon parallax" data-effect="fadeInLeft">
+                  <div class="card-icon-limit">
+                     <img
+                        src="assets/icon/github-icon.png"
+                        alt="logo"
+                        class="card-icon-img"
+                     />
+                  </div>
+                  <figcaption class="card-name">MySQL</figcaption>
+               </figure>
+            </div>
+         </article>
+      </main>
+
+      <footer class="contact" id="contactMe">
+         <h2 class="projects-title parallax" data-effect="fadeInDown">
+            Contact me
+         </h2>
+         <div class="contact-wrapper">
+            <p class="projects-title">
+               Contact me on email <strong>ahyaralfaruq97@gmail.com</strong> if
+               there's something needed.
+            </p>
+
+            <div class="social-media-wrapper">
+               <a href="https://instagram.com/@ayar.js" target="_blank">
+                  <figure class="social-media-figure">
+                     <div>
+                        <div class="social-media-icon-limit">
+                           <i class="fab fa-instagram social-media-icon"></i>
+                        </div>
+                     </div>
+                  </figure>
+               </a>
+
+               <a href="https://whatsapp.com/62896" target="_blank">
+                  <figure class="social-media-figure">
+                     <div>
+                        <div class="social-media-icon-limit">
+                           <i class="fab fa-whatsapp social-media-icon"></i>
+                        </div>
+                     </div>
+                  </figure>
+               </a>
+            </div>
+         </div>
+      </footer>
+
+      <script src="assets/js/jquery-3.4.1.min.js"></script>
+      <script src="assets/js/jquery.waypoints.js"></script>
+      <script src="assets/js/all.js"></script>
+      <script src="assets/js/index.js"></script>
+   </body>
+</html>

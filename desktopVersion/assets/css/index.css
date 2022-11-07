@@ -1,0 +1,433 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+@font-face {
+   font-family: philosopher;
+   src: url("../fonts/Philosopher-Italic.ttf");
+}
+@font-face {
+   font-family: great vibes;
+   src: url("../fonts/GreatVibes-Regular.ttf");
+}
+
+:root,
+[data-color-mode="light"][data-light-theme*="light"],
+[data-color-mode="dark"][data-dark-theme*="light"] {
+   --cl-special-text: #c2ab68;
+   --cl-default-text: #24292f;
+   --bg-color-default: #ffffff;
+   --bg-hover: #cacaca;
+   --border-shadow: 0px 3px 5px 3px rgb(0 0 0 / 10%);
+   --flagging-border: none;
+   --box-shadow: 0px 1px 6px 0px rgb(49 53 59 / 12%);
+}
+[data-color-mode="light"][data-light-theme*="dark"],
+[data-color-mode="dark"][data-dark-theme*="dark"] {
+   --cl-special-text: #9e9eff;
+   --cl-default-text: #8b949e;
+   --bg-color-default: #282c34;
+   --bg-hover: #9e9eff;
+   --border-shadow: 0px 3px 5px 3px rgb(0 0 0 / 10%);
+   --flagging-border: 1px solid var(--cl-default-text);
+   --box-shadow: 0px 1px 6px 0px rgb(49 53 59 / 12%);
+}
+[data-color-mode="light"][data-light-theme*="dark"],
+[data-color-mode="dark"][data-dark-theme*="dark"] {
+   color-scheme: dark;
+}
+[data-color-mode] {
+   background: var(--bg-color-default);
+   color: var(--cl-default-text);
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+      sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+*,
+html,
+body {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+*::before,
+*::after,
+html::before,
+html::after,
+body::after,
+body::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+h2 {
+   font-family: "philosopher", sans-serif;
+   color: var(--cl-special-text);
+}
+.parallax {
+   opacity: 0;
+}
+
+/* navbar componenet */
+header {
+   position: relative;
+   margin-top: 100px;
+}
+.header-wrapper {
+   position: fixed;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   top: 0;
+   left: 0;
+   right: 0;
+   width: 100%;
+   min-width: 768px;
+   height: 69px;
+   z-index: 999;
+   background: var(--bg-color-default);
+   border-bottom: var(--flagging-border);
+   box-shadow: var(--border-shadow);
+}
+.nv {
+   position: fixed;
+   display: flex;
+   align-items: center;
+   width: 96%;
+   height: 56px;
+   top: 11px;
+}
+.nv-logo {
+   display: inline-block;
+   /* padding-top: 0.3125rem;
+   padding-bottom: 0.3125rem; */
+   margin-right: 1rem;
+   font-size: 1.25rem;
+   line-height: inherit;
+   white-space: nowrap;
+}
+.nv-logo-wrapper {
+   position: relative;
+   width: 46px;
+   height: 46px;
+}
+.nv-logo-limit {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   border-radius: 12px;
+}
+.nv-img-logo {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.burger-menu {
+   display: none;
+}
+.nv-main {
+   display: flex;
+   align-items: center;
+   margin-left: auto;
+   height: 100%;
+}
+.nv-item-wrapper {
+   display: flex;
+   list-style: none;
+   width: 100%;
+   height: 100%;
+}
+.nv-item {
+   margin: 0 1rem;
+}
+.nv-link {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   text-decoration: none;
+   color: inherit;
+}
+.nv-link:hover {
+   border-bottom: 5px solid -webkit-link;
+   color: -webkit-link;
+   transition: all 0.25s ease-in-out 0s;
+}
+.mode {
+   display: flex;
+   flex-flow: nowrap row-reverse;
+   align-items: center;
+   margin-left: 1rem;
+   height: 100%;
+}
+button.mode {
+   cursor: pointer;
+   border: none;
+   background: inherit;
+   outline: none;
+   height: 100%;
+}
+.mode > svg {
+   width: 16px !important;
+   height: 16px !important;
+}
+.mode > .titleMode {
+   white-space: nowrap;
+   margin-right: 1rem;
+}
+
+/* main */
+.main {
+   min-width: 768px;
+   width: calc(100% - 10%);
+   min-height: 100vh;
+   margin: auto auto 5rem auto;
+}
+
+/* article projects */
+article.projects {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   height: 625px;
+   margin-bottom: 5rem;
+   overflow: hidden;
+}
+.projects-title {
+   text-align: center;
+   margin-bottom: 3.5rem;
+}
+.projects-box-wrapper {
+   width: 100%;
+   height: 100%;
+   overflow-y: auto;
+}
+.projects-wrapper {
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+   padding: 0 16px;
+}
+.projects-box-wrapper::-webkit-scrollbar {
+   background: lightgray;
+   width: 12px;
+   border-radius: 12px;
+}
+.projects-box-wrapper::-webkit-scrollbar-thumb {
+   background: darkgray;
+   width: 8px;
+   height: 12px;
+   border-radius: 12px;
+}
+.project {
+   position: relative;
+   display: flex;
+   align-items: flex-start;
+   line-height: inherit;
+   height: 132px;
+   margin-bottom: 1rem;
+   border-radius: 12px;
+   border: var(--flagging-border);
+   box-shadow: var(--border-shadow);
+   color: inherit;
+   text-decoration: none;
+   overflow: hidden;
+   cursor: pointer;
+}
+.project-img-wrapper {
+   position: relative;
+   width: 220px;
+   height: 132px;
+   margin-right: 3vw;
+   flex-shrink: 0;
+}
+.project-img-limit {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+}
+.project-img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.box-project-desc {
+   height: 100%;
+   overflow: hidden;
+   padding-right: 14px;
+   padding-bottom: 14px;
+}
+.project-title {
+   margin-bottom: 14px;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 1;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+}
+.project-desc {
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 5;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+}
+
+/* article about */
+
+article.about {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   margin-bottom: 5rem;
+}
+.about-title {
+   text-align: center;
+   margin-bottom: 3.5rem;
+}
+.about-wrapper {
+   display: flex;
+   align-items: center;
+   width: 100%;
+   height: 330px;
+}
+.about-box-img {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   border-radius: 12px 0 0 12px;
+}
+.about-limit-img {
+   position: relative;
+   width: 250px;
+   height: 250px;
+}
+.shape-circle {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   overflow: hidden;
+   background: var(--bg-color-default);
+}
+.my-pict {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.about-box-intro {
+   width: 100%;
+   height: 100%;
+   padding: 0 0 1rem 0;
+   border-radius: 0 12px 12px 0;
+   overflow: hidden;
+}
+.scrolling-y {
+   width: 100%;
+   height: 100%;
+   overflow-y: auto;
+}
+.scrolling-y::-webkit-scrollbar {
+   display: none;
+}
+.about-text-intro {
+   margin-bottom: 1.5rem;
+}
+
+/* article skills */
+
+.skills {
+   width: 100%;
+   margin-bottom: 5rem;
+}
+.cards-wrapper {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-wrap: wrap;
+}
+.card-icon {
+   display: flex;
+   flex-flow: column nowrap;
+   width: 125px;
+   height: 150px;
+   padding: 1vw;
+   margin-right: 1.329rem;
+   margin-bottom: 1.5rem;
+   border-radius: 12px;
+   border: var(--flagging-border);
+   box-shadow: var(--border-shadow);
+   overflow: hidden;
+}
+.card-icon-limit {
+   position: relative;
+   padding-bottom: 100%;
+}
+.card-icon-img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+.card-name {
+   text-align: center;
+   font-weight: bold;
+   height: 100%;
+}
+
+/* contact me */
+
+footer.contact {
+   border-top: 2px solid var(--cl-default-text);
+   padding: 1rem;
+}
+.social-media-wrapper {
+   display: flex;
+   justify-content: center;
+}
+.social-media-wrapper > a {
+   padding: 0 0.5rem 0.5rem 0;
+}
+.contact-wrapper > .projects-title > strong {
+   color: var(--cl-special-text);
+}
+.social-media-figure {
+   position: relative;
+   display: flex;
+   flex-flow: column nowrap;
+   width: 28px;
+   height: 28px;
+}
+.social-media-figure > div:first-child {
+   position: relative;
+   padding-bottom: 100%;
+}
+.social-media-icon-limit {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   overflow: hidden;
+}
+.social-media-icon {
+   width: 100% !important;
+   height: 100% !important;
+   color: var(--cl-special-text) !important;
+   object-fit: cover;
+}

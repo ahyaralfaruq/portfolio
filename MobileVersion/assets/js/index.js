@@ -19,6 +19,22 @@ const darkMode = () => {
    }
 };
 
+const burgerMenu = () => {
+   let el = document.querySelector(".nv-main");
+   let burgerIcon = document.querySelector(".fa-bars");
+   let silangIcon = document.querySelector(".fa-times");
+
+   if (!el.classList.contains("active")) {
+      el.classList.add("active");
+      burgerIcon.style.display = "none";
+      silangIcon.style.display = "inline";
+   } else {
+      el.classList.remove("active");
+      burgerIcon.style.display = "inline";
+      silangIcon.style.display = "none";
+   }
+};
+
 (function () {
    $(".parallax").waypoint(
       function (direction) {

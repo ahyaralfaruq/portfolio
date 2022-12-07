@@ -10,7 +10,7 @@
    ) {
       //write code for your mobile clients here.
 
-      document.location = "mobileVersion/index.php";
+      document.location = "mobileVersion/index.html";
 
       // var jsScript = document.createElement("script");
       // jsScript.setAttribute("type", "text/javascript");
@@ -24,7 +24,6 @@
       // document.getElementsByTagName("head")[0].appendChild(cssScript);
    } else {
       // write code for your desktop clients here
-      // document.location = "desktopVersion/index.html";
-      document.location = "mobileVersion/index.html";
+      document.location = "desktopVersion/index.html";
    }
 })();

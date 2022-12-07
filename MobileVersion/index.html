@@ -17,7 +17,6 @@
       <link rel="stylesheet" href="assets/css/all.css" />
       <!-- CSS -->
       <link rel="stylesheet" href="assets/css/index.css" />
-      <link rel="stylesheet" href="assets/css/index-breakpoin.css" />
 
       <title>My Portfolio</title>
    </head>
@@ -37,7 +36,11 @@
                   </figure>
                </a>
 
-               <button class="burger-menu" id="burgerMenu">
+               <button
+                  class="burger-menu"
+                  id="burgerMenu"
+                  onclick="burgerMenu()"
+               >
                   <i class="fas fa-times" style="display: none"></i>
                   <i class="fas fa-bars" style="display: inline"></i>
                </button>
@@ -73,133 +76,69 @@
                my projects
             </h2>
             <div class="projects-box-wrapper">
-               <div class="projects-wrapper parallax" data-effect="fadeInLeft">
-                  <a href="#" class="project">
-                     <figure class="project-img-wrapper">
-                        <div class="project-img-limit">
-                           <img
-                              src="assets/img/asd.png"
-                              alt="project 1"
-                              class="project-img"
-                           />
+               <div class="projects-slideLeft">
+                  <div class="projects-wrapper">
+                     <a href="#" class="project">
+                        <div class="card-special">
+                           <figure class="project-img-wrapper">
+                              <img
+                                 src="assets/img/asd.png"
+                                 alt="project 1"
+                                 class="img-cover"
+                              />
+                           </figure>
+                           <summary class="box-project-desc">
+                              <h3 class="project-title">project 1</h3>
+                              <p class="project-desc">
+                                 Lorem ipsum dolor sit amet consectetur
+                                 adipisicing elit.
+                              </p>
+                           </summary>
                         </div>
-                     </figure>
-                     <summary class="box-project-desc">
-                        <h3 class="project-title">project 1</h3>
-                        <p class="project-desc">
-                           Lorem ipsum dolor sit amet consectetur adipisicing
-                           elit. Facere, aspernatur facilis, blanditiis cumque
-                           mollitia distinctio velit doloribus possimus libero
-                           amet sapiente? Porro architecto laborum explicabo
-                           minus fugiat aut laudantium impedit.
-                        </p>
-                     </summary>
-                  </a>
-                  <a href="#" class="project">
-                     <figure class="project-img-wrapper">
-                        <div class="project-img-limit">
-                           <img
-                              src="assets/img/avatar.png"
-                              alt="project 1"
-                              class="project-img"
-                           />
+                     </a>
+                     <a href="#" class="project">
+                        <div class="card-special">
+                           <figure class="project-img-wrapper">
+                              <img
+                                 src="assets/img/asd.png"
+                                 alt="project 1"
+                                 class="img-cover"
+                              />
+                           </figure>
+                           <summary class="box-project-desc">
+                              <h3 class="project-title">project 1</h3>
+                              <p class="project-desc">
+                                 Lorem ipsum dolor sit amet consectetur
+                                 adipisicing elit. Facere, aspernatur facilis,
+                                 blanditiis cumque mollitia distinctio velit
+                                 doloribus possimus libero amet sapiente?
+                              </p>
+                           </summary>
                         </div>
-                     </figure>
-                     <summary class="box-project-desc">
-                        <h3 class="project-title">project 2</h3>
-                        <p class="project-desc">
-                           Lorem ipsum dolor sit amet consectetur adipisicing
-                           elit. Facere, aspernatur facilis, blanditiis cumque
-                           mollitia distinctio velit doloribus possimus libero
-                           amet sapiente? Porro architecto laborum explicabo
-                           minus fugiat aut laudantium impedit.
-                        </p>
-                     </summary>
-                  </a>
-                  <a href="#" class="project">
-                     <figure class="project-img-wrapper">
-                        <div class="project-img-limit">
-                           <img
-                              src="assets/img/sabo-ace.jpg"
-                              alt="project 1"
-                              class="project-img"
-                           />
+                     </a>
+                     <a href="#" class="project">
+                        <div class="card-special">
+                           <figure class="project-img-wrapper">
+                              <img
+                                 src="assets/img/asd.png"
+                                 alt="project 1"
+                                 class="img-cover"
+                              />
+                           </figure>
+                           <summary class="box-project-desc">
+                              <h3 class="project-title">project 1</h3>
+                              <p class="project-desc">
+                                 Lorem ipsum dolor sit amet consectetur
+                                 adipisicing elit. Facere, aspernatur facilis,
+                                 blanditiis cumque mollitia distinctio velit
+                                 doloribus possimus libero amet sapiente? Porro
+                                 architecto laborum explicabo minus fugiat aut
+                                 laudantium impedit.
+                              </p>
+                           </summary>
                         </div>
-                     </figure>
-                     <summary class="box-project-desc">
-                        <h3 class="project-title">project 3</h3>
-                        <p class="project-desc">
-                           Lorem ipsum dolor sit amet consectetur adipisicing
-                           elit. Facere, aspernatur facilis, blanditiis cumque
-                           mollitia distinctio velit doloribus possimus libero
-                           amet sapiente? Porro architecto laborum explicabo
-                           minus fugiat aut laudantium impedit.
-                        </p>
-                     </summary>
-                  </a>
-                  <a href="#" class="project">
-                     <figure class="project-img-wrapper">
-                        <div class="project-img-limit">
-                           <img
-                              src="assets/img/sasori-family.png"
-                              alt="project 1"
-                              class="project-img"
-                           />
-                        </div>
-                     </figure>
-                     <summary class="box-project-desc">
-                        <h3 class="project-title">project 4</h3>
-                        <p class="project-desc">
-                           Lorem ipsum dolor sit amet consectetur adipisicing
-                           elit. Facere, aspernatur facilis, blanditiis cumque
-                           mollitia distinctio velit doloribus possimus libero
-                           amet sapiente? Porro architecto laborum explicabo
-                           minus fugiat aut laudantium impedit.
-                        </p>
-                     </summary>
-                  </a>
-                  <a href="#" class="project">
-                     <figure class="project-img-wrapper">
-                        <div class="project-img-limit">
-                           <img
-                              src="assets/img/avatar.png"
-                              alt="project 1"
-                              class="project-img"
-                           />
-                        </div>
-                     </figure>
-                     <summary class="box-project-desc">
-                        <h3 class="project-title">project 5</h3>
-                        <p class="project-desc">
-                           Lorem ipsum dolor sit amet consectetur adipisicing
-                           elit. Facere, aspernatur facilis, blanditiis cumque
-                           mollitia distinctio velit doloribus possimus libero
-                           amet sapiente? Porro architecto laborum explicabo
-                           minus fugiat aut laudantium impedit.
-                        </p>
-                     </summary>
-                  </a>
-                  <a href="#" class="project">
-                     <figure class="project-img-wrapper">
-                        <div class="project-img-limit">
-                           <img
-                              src="assets/img/sabo-ace.jpg"
-                              alt="project 1"
-                              class="project-img"
-                           />
-                        </div>
-                     </figure>
-                     <summary class="box-project-desc">
-                        <h3 class="project-title">project 6</h3>
-                        <p class="project-desc">
-                           Lorem ipsum dolor sit amet consectetur adipisicing
-                           elit. Facere, aspernatur facilis, blanditiis cumque
-                           mollitia distinctio velit doloribus possimus libero
-                           amet sapiente? Porro architecto laborum explicabo
-                           minus fugiat aut laudantium impedit.
-                        </p>
-                     </summary>
-                  </a>
+                     </a>
+                  </div>
                </div>
             </div>
          </article>

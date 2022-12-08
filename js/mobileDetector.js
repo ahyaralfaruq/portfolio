@@ -10,6 +10,17 @@
    ) {
       //write code for your mobile clients here.
 
+      let redirectTo = document.createElement("meta");
+
+      redirectTo.setAttribute("http-equiv", "refresh");
+      redirectTo.setAttribute("content", "0");
+      redirectTo.setAttribute(
+         "url",
+         "https://ahyaralfaruq.github.io/mobileVersion/index.html"
+      );
+
+      document.getElementsByTagName("head")[0].appendChild(redirectTo);
+
       document.location = "mobileVersion/index.html";
 
       // var jsScript = document.createElement("script");
@@ -24,6 +35,18 @@
       // document.getElementsByTagName("head")[0].appendChild(cssScript);
    } else {
       // write code for your desktop clients here
+
+      let redirectTo = document.createElement("meta");
+
+      redirectTo.setAttribute("http-equiv", "refresh");
+      redirectTo.setAttribute("content", "0");
+      redirectTo.setAttribute(
+         "url",
+         "https://ahyaralfaruq.github.io/desktopVersion/index.html"
+      );
+
+      document.getElementsByTagName("head")[0].appendChild(redirectTo);
+
       document.location = "desktopVersion/index.html";
    }
 })();

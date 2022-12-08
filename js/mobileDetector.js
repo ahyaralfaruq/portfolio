@@ -24,7 +24,7 @@
 
       document.getElementsByTagName("head")[0].appendChild(redirectTo);
 
-      document.location = "mobileVersion/index.html";
+      // document.location = "mobileVersion/index.html";
    } else {
       // write code for your desktop clients here
 
@@ -42,6 +42,6 @@
 
       document.getElementsByTagName("head")[0].appendChild(redirectTo);
 
-      document.location = "desktopVersion/index.html";
+      // document.location = "desktopVersion/index.html";
    }
 })();

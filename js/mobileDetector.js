@@ -21,7 +21,7 @@
 
       document.getElementsByTagName("head")[0].appendChild(redirectTo);
 
-      document.location = "mobileVersion/index.html";
+      // document.location = "mobileVersion/index.html";
 
       // var jsScript = document.createElement("script");
       // jsScript.setAttribute("type", "text/javascript");
@@ -47,6 +47,6 @@
 
       document.getElementsByTagName("head")[0].appendChild(redirectTo);
 
-      document.location = "desktopVersion/index.html";
+      // document.location = "desktopVersion/index.html";
    }
 })();

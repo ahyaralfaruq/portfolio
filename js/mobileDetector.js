@@ -15,7 +15,7 @@
       redirectTo.setAttribute("http-equiv", "refresh");
       redirectTo.setAttribute(
          "content",
-         "0; url=https://ahyaralfaruq.github.io/portfolio/mobileVersion/index.html"
+         "0; url=https://ahyaralfaruq.github.io/portfolio/MobileVersion/index.html"
       );
       // redirectTo.setAttribute(
       //    "url",
@@ -24,7 +24,7 @@
 
       document.getElementsByTagName("head")[0].appendChild(redirectTo);
 
-      // document.location = "mobileVersion/index.html";
+      // document.location = "MobileVersion/index.html";
    } else {
       // write code for your desktop clients here
 

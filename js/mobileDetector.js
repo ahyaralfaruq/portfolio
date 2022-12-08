@@ -10,31 +10,31 @@
    ) {
       //write code for your mobile clients here.
 
-      // let redirectTo = document.createElement("meta");
+      let redirectTo = document.createElement("meta");
 
-      // redirectTo.setAttribute("http-equiv", "refresh");
-      // redirectTo.setAttribute("content", "0");
-      // redirectTo.setAttribute(
-      //    "url",
-      //    "https://ahyaralfaruq.github.io/mobileVersion/index.html"
-      // );
+      redirectTo.setAttribute("http-equiv", "refresh");
+      redirectTo.setAttribute("content", "0");
+      redirectTo.setAttribute(
+         "url",
+         "https://ahyaralfaruq.github.io/portfolio/mobileVersion/index.html"
+      );
 
-      // document.getElementsByTagName("head")[0].appendChild(redirectTo);
+      document.getElementsByTagName("head")[0].appendChild(redirectTo);
 
       document.location = "mobileVersion/index.html";
    } else {
       // write code for your desktop clients here
 
-      // let redirectTo = document.createElement("meta");
+      let redirectTo = document.createElement("meta");
 
-      // redirectTo.setAttribute("http-equiv", "refresh");
-      // redirectTo.setAttribute("content", "0");
-      // redirectTo.setAttribute(
-      //    "url",
-      //    "https://ahyaralfaruq.github.io/desktopVersion/index.html"
-      // );
+      redirectTo.setAttribute("http-equiv", "refresh");
+      redirectTo.setAttribute("content", "0");
+      redirectTo.setAttribute(
+         "url",
+         "https://ahyaralfaruq.github.io/portfolio/desktopVersion/index.html"
+      );
 
-      // document.getElementsByTagName("head")[0].appendChild(redirectTo);
+      document.getElementsByTagName("head")[0].appendChild(redirectTo);
 
       document.location = "desktopVersion/index.html";
    }

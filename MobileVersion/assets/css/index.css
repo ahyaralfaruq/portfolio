@@ -343,8 +343,8 @@ article.about {
 }
 .about-limit-img {
    position: relative;
-   width: 250px;
-   height: 250px;
+   width: 266px;
+   height: 266px;
 }
 .shape-circle {
    position: absolute;
@@ -391,16 +391,16 @@ article.skills {
    height: 100%;
    display: flex;
    flex-wrap: wrap;
-   padding-left: 1.7rem;
+   padding-left: 16px;
 }
 .card-icon {
    display: flex;
    flex-flow: column nowrap;
-   width: 116px;
-   height: 150px;
+   width: 84.5px;
+   /* height: 150px; */
    margin-right: 1.05rem;
    margin-bottom: 1.5rem;
-   border-radius: 12px;
+   border-radius: 8px;
    border: var(--flagging-border);
    box-shadow: var(--border-shadow);
    overflow: hidden;
@@ -421,6 +421,7 @@ article.skills {
    text-align: center;
    font-weight: bold;
    height: 100%;
+   margin-bottom: 5px;
 }
 
 /* contact me */
@@ -465,4 +466,41 @@ footer.contact {
    height: 100% !important;
    color: var(--cl-special-text) !important;
    object-fit: cover;
+}
+
+@media (min-width: 375px) {
+   .project {
+      width: 305px;
+   }
+   .about-limit-img {
+      width: 285px;
+      height: 285px;
+   }
+   .card-icon {
+      width: 90.3px;
+   }
+}
+@media (min-width: 425px) {
+   .project {
+      width: 350px;
+   }
+   .about-limit-img {
+      width: 320px;
+      height: 320px;
+   }
+   .card-icon {
+      width: 105.3px;
+   }
+}
+@media (min-width: 768px) {
+   .project {
+      width: 314px;
+   }
+   .about-limit-img {
+      width: 320px;
+      height: 320px;
+   }
+   .card-icon {
+      width: 95.74px;
+   }
 }

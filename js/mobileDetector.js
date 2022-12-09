@@ -17,14 +17,10 @@
          "content",
          "0; url=https://ahyaralfaruq.github.io/portfolio/MobileVersion/index.html"
       );
-      // redirectTo.setAttribute(
-      //    "url",
-      //    "https://ahyaralfaruq.github.io/portfolio/mobileVersion/index.html"
-      // );
 
       document.getElementsByTagName("head")[0].appendChild(redirectTo);
 
-      // document.location = "MobileVersion/index.html";
+      document.location = "MobileVersion/index.html";
    } else {
       // write code for your desktop clients here
 
@@ -35,13 +31,9 @@
          "content",
          "0; url=https://ahyaralfaruq.github.io/portfolio/desktopVersion/index.html"
       );
-      // redirectTo.setAttribute(
-      //    "url",
-      //    "https://ahyaralfaruq.github.io/portfolio/desktopVersion/index.html"
-      // );
 
       document.getElementsByTagName("head")[0].appendChild(redirectTo);
 
-      // document.location = "desktopVersion/index.html";
+      document.location = "desktopVersion/index.html";
    }
 })();

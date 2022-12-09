@@ -309,8 +309,8 @@ article.about {
 }
 .about-limit-img {
    position: relative;
-   width: 250px;
-   height: 250px;
+   width: 295px;
+   height: 295px;
 }
 .shape-circle {
    position: absolute;
@@ -357,16 +357,15 @@ article.about {
    height: 100%;
    display: flex;
    flex-wrap: wrap;
+   padding-left: 21px;
 }
 .card-icon {
    display: flex;
    flex-flow: column nowrap;
-   width: 125px;
-   height: 150px;
-   padding: 1vw;
+   width: 107.5px;
    margin-right: 1.329rem;
    margin-bottom: 1.5rem;
-   border-radius: 12px;
+   border-radius: 8px;
    border: var(--flagging-border);
    box-shadow: var(--border-shadow);
    overflow: hidden;
@@ -387,6 +386,7 @@ article.about {
    text-align: center;
    font-weight: bold;
    height: 100%;
+   margin-bottom: 5px;
 }
 
 /* contact me */
